@@ -1,0 +1,108 @@
+{
+  "titles": {
+    "home": "inicio",
+    "aboutme": "acerca de mí",
+    "skills": "habilidades",
+    "contacme": "contactame",
+    "project": "proyectos",
+    "techUsed": "tecnologias usadas: ",
+    "appForm": "ficha postulante",
+    "synlab": "synlab medica",
+    "portfolio": "portafolio",
+    "appAltillo": "aplicativo altillos",
+    "personalInfo": "información personal"
+  },
+  "projects": {
+    "appForm": {
+      "first": "Landing page en el que un usuario registraba su información personal antes de pasar a la entrevista personal que se realizaban en las oficinas.",
+      "second": "Dicha ficha era enviada mediante correo electrónico con un TOKEN único para temas de seguridad.",
+      "third": "Dentro de esta, ya se encontraban registrados los nombres y el DNI del usuario, los demás datos serían registrados manualmente por el usuario.",
+      "fourth": "Se realizaban consumo de varias API internas de la organización para obtener las listas de, por ejemplo, los países, departamentos, provincias y distritos, quienes eran cambiados dinámicamente dependiendo de la selección anterior.",
+      "fiveth": "Todos estos datos era registrados en la Base de Datos de la empresa, mediante las API post que creábamos."
+    },
+    "synlab": {
+      "first": "Lab médica es una aplicación web que permite a pacientes de hospitales acceder a información sobre sus tratamientos, visitas y prescripciones, y consta de cinco apartados: Covid, HomeCovid, Appointment, Fast PCR y el SynLab. ",
+      "second": "Los primeros cuatro apartados permiten a pacientes, médicos y enfermeras realizar y ver los resultados de pruebas y consultas relacionadas con Covid. ",
+      "third": "SynLab configura los cuatro entornos y controla el acceso de usuarios a hospitales, información, análisis y manipulación de datos de usuarios, doctores, enfermeras y administradores.",
+      "fourth": "Como desarrolladores, solucionamos problemas en el entorno web y mejoramos el producto según las peticiones de los usuarios, desde agregar labels en el frontend hasta mejorar la seguridad de ciertas funciones como los captcha."
+    },
+    "portfolio": {
+      "first": "Proyecto personal en el que pondré toda la información personal y académica que me involucra, además de plasmar los proyectos (personales o de trabajo) en los que me he desarrollado.",
+      "second": "Además, servirá como carta de presentación de lo que puedo desarrollar hasta el momento utilizando Vue, HTML, CSS y JavaScript/TypeScript."
+    },
+    "appAltillo": {
+      "first": "Desarrollé este proyecto académico para el curso de Tesina en la universidad, incluyendo el aplicativo móvil y la documentación requerida para sustentarlo.",
+      "second": "Se desarrolló un aplicativo móvil para SODIMAC que resolvía la problemática de la ubicación desordenada de productos en los altillos.",
+      "third": "El aplicativo registraba los movimientos de los productos en los altillos, incluyendo SKU, cantidad y ubicación, permitiendo a los usuarios encontrar los productos de manera fácil y rápida.",
+      "fourth": "El aplicativo permitía registrar, modificar y eliminar productos, así como listar los cambios realizados, con el objetivo de mantener un control y reducir errores humanos.",
+      "fiveth": "También contaba con un apartado de lectura de Código QR con el que se podría mostrar los productos y las cantidades de estos en un solo lugar.",
+      "sixth": "Como base de Datos utilicé FireBase, aprovechando el Realtime Database que tienen en sus servicios."
+    }
+  },
+  "labels": {
+    "webDev": "desarrollador web ",
+    "knowledge": "con conocimientos en Vue, JS, HTML y CSS, además de otros lenguajes como TypeScript y Java.",
+    "consider": "Me considero una persona con una gran prioridad por la responsabilidad y el compromiso por el trabajo, además de tener aptitudes para poder desarrollar bajo presión.",
+    "name": "nombre",
+    "age": "edad",
+    "years": "años",
+    "year": "años",
+    "email": "correo",
+    "address": "dirección",
+    "skill": "habilidad",
+    "expe": "experiencia",
+    "language": "lenguajes",
+    "spanish": "español / ingles (escrito)",
+    "freelance": "freelance",
+    "available": "disponible",
+    "portfolio1": "Creación de una Página Web utilizando Vue/TypeScript en la que se registren los postulantes a los puestos de trabajos generados por la organización y queden registrados en su ERP.",
+    "portfolio2": "Soporte y mantenimiento a varias páginas pertenecientes al grupo Synlab, donde usando Java/FTL/JS y Vue/TypeScript solucionábamos los errores y realizábamos los nuevos requerimientos de los usuarios.",
+    "portfolio3": "Creación de una LandingPage donde mostrar mi información personal y demás características.",
+    "portfolio4": "Aplicativo Móvil creado en Flutter/DART como parte del curso de Tesis de la carrera universitaria."
+  },
+  "date": {
+    "jan": "ene",
+    "apr": "abr",
+    "aug": "ago",
+    "sep": "set",
+    "dec": "dic"
+  },
+  "timeline": {
+    "exp": {
+      "title1": "desarrollador frontend junior",
+      "title2": "ayudante de programación",
+      "title3": "técnico instalador",
+      "title4": "asesor de ventas",
+      "content1": "Encargado del diseño y desarrollo de sitios y aplicaciones web usando lenguajes de programación como HTML, CSS, JavaScript, Vue, etc. Participé en varios proyectos donde se brindan soporte.",
+      "content2": "Ayudé en el programado de los equipos BMS para el proyecto LAP el cual se encarga de la supervisión y monitoreo de varios sistemas dentro de una edificación",
+      "content3": "Técnico encargado en el canalizado, cableado, instalación y monitoreo de los distintos dispositivos en el Sistema de Alarma contra Incendios.",
+      "content4": "También encargado del mantenmiento e instalación de los dispositivos de CCTV.",
+      "content5": "Responsable de brindar la correcta asesoría a los clientes en el área de iluminación y electricidad.",
+      "content6": "También encargado de la instalación de las exhibiciones y equipos. ",
+      "content7": "Además, veía el control y seguimiento de los productos mediante kardex"
+    },
+    "edu": {
+      "title1": "ingeniería de sistemas",
+      "title2": "secundaria - contabilidad",
+      "title3": "primaria",
+      "content1": "Bachiller de la Carrera Profesional de Ingenieria de Sistemas. ",
+      "content2": "Secundaria completa con cursos de especialización en contabilidad, ocupando el segundo lugar de la promoción.",
+      "content3": "Primaria completa. "
+    },
+    "add": {
+      "content1": "Curso en el que vi los fundamentos de Vue 2 & Vue 3, usando Composition API y Option API & VueX",
+      "content2": "Curso para potenciar mis conocimientos en Excel VBA.",
+      "content3": "Curso que llevé virtualmente, donde pude ver programación web en lenguaje JAVA, además de ver Springboot y Angular.",
+      "content4": "Curso dedicado a saber los conceptos necesarios acerca de HTML, CSS & JS.",
+      "content5": "Curso donde se vio hasta un nivel intermedio Microsoft Office Word, Excel y Power Point.",
+      "content6": "Curso en el que aprendí un lenguaje de programación para el desarrollo de aplicaciones móviles para Android y IOs."
+    }
+  },
+  "buttons": {
+    "download": "descargar cv",
+    "expe": "experiencia",
+    "educ": "educación",
+    "add": "adicional",
+    "info": "más info"
+  }
+}

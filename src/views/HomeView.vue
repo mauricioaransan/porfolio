@@ -1,18 +1,58 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <v-row>
+<!--    <v-col md="3" lg="3" xl="2" class="d-none d-sm-none d-md-flex">-->
+<!--      -->
+<!--    </v-col>-->
+    <v-col sm="12" xs="12" md="12" lg="12" xl="12">
+
+      <v-sheet color="transparent" class="d-none d-sm-none d-md-flex btn_drawer">
+        <NavigationBarLeft/>
+      </v-sheet>
+      <!-- <v-sheet color="transparent" class="d-sm-flex d-md-none btn_drawer">
+        <NavigationBarHidden/>
+      </v-sheet> -->
+      <about-me/>
+    </v-col>
+
+  </v-row>
+
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+  import {defineComponent} from 'vue'
+  import NavigationBarLeft from '../components/NavigationBarLeft/NavigationBarLeft.vue'
+  import NavigationBarHidden from '../components/NavigationBarLeft/NavigationDrawerHidden.vue'
+  import AboutMe from '../components/about/aboutme.vue'
 
-@Options({
-  components: {
-    HelloWorld,
-  },
-})
-export default class HomeView extends Vue {}
+  export default defineComponent({
+    name: 'Home-View',
+
+    components: {
+      NavigationBarLeft,
+      // NavigationBarHidden,
+      AboutMe,
+    },
+
+    setup(){
+
+
+
+      return {
+
+      }
+    }
+  })
 </script>
+<style>
+  .v-item-group{
+    max-width: fit-content !important;
+    margin: 0 auto;
+  }
+  .btn_drawer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    color: white;
+  }
+</style>

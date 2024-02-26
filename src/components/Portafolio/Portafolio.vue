@@ -1,5 +1,5 @@
 <template>
-  <v-sheet id="portfolio" class="mt-10 pl-5 pr-5" >
+  <v-sheet id="portfolio" class="mt-10 pa-5" color="bgcards" >
     <h1 class="mt-5 port_title"> {{ $t('titles.portfolio') }}</h1>
     <v-row class="px-10 mt-10" justify="center">
       <v-col cols="12" sm="6" md="4" lg="4" xl="4"   v-for="(item,id) in items" :key="id">
@@ -7,15 +7,15 @@
           <v-sheet v-bind="props" color='transparent' class="pa-0 ma-0">
             <v-img
             :src="item.image"
-            height="350"
+            height="315"
             width="100%"
             >
             <v-expand-transition>
               <v-sheet
               outlined
-              elevation="10"
-              class="d-flex transition-fast-in-fast-out "
+              class="d-flex transition-fast-in-fast-out card-portfolio"
               style="height: 100%;"
+              color="cards" 
               v-if="isHovering"
                 >
                     <v-col  align-self="center">
@@ -90,30 +90,3 @@ export default defineComponent ( {
   }
 })
 </script>
-
-<style scoped>
-
-.port_title{
-  text-transform: uppercase;
-  color:  #003785;
-  transition: 0.2s;
-}
-.port_title:hover{
-  text-shadow: 0 0 3px #040b14;
-  transition: 0.2s;
-  cursor:pointer;
-}
-
-.port_info_title{
-  font-weight: 800;
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-.port_info_content{
-  font-size: 17px;
-  text-align: justify;
-  hyphens: auto;
-  margin-bottom: 30px;
-}
-</style>

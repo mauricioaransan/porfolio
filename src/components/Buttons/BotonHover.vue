@@ -73,7 +73,7 @@ a{
   letter-spacing: 5px;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #040b14;
+  background-color: rgb(var(--v-theme-drawercolor));
   padding: 10px 30px;
   transition: .5s;
   transition-delay: .8s;

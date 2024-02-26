@@ -1,19 +1,26 @@
 <template>
-<v-col>
-  <div class="progress_title">
-    {{ title }}
-  </div>
-  <v-progress-linear
-      :color="color"
-      :model-value="value"
-      height="25"
-      striped
-  >
-    <template v-slot:default="{ value }">
-      <strong>{{ value }}%</strong>
-    </template>
-  </v-progress-linear>
-</v-col>
+  <v-row class="ma-0">
+      <v-col cols="2" class="pa-0 my-2">
+        <v-sheet color="transparent">
+        <span class="progress_title">
+          {{ title }}
+        </span>  
+        </v-sheet>
+      </v-col>
+      <v-col class="pa-0 my-2">
+        <v-progress-linear
+        :color="color"
+        :model-value="value"
+        height="25"
+        striped
+        >
+          <template v-slot:default="{ value }">
+            <strong>{{ value }}%</strong>
+          </template>
+        </v-progress-linear>
+      </v-col>
+      
+  </v-row>
 </template>
 
 <script lang="ts">
@@ -43,13 +50,4 @@ export default defineComponent ({
   font-weight: bold;
 
 }
-/* .v-progress-linear--striped .v-progress-linear__determinate {
-  animation: progress-linear-stripes 1s infinite linear;
-}
-
-@keyframes progress-linear-stripes {
-  0% {
-    background-position-x: 40px;
-  }
-} */
 </style>

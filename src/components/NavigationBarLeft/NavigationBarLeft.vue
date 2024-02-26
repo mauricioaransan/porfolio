@@ -1,6 +1,6 @@
 <template>
     <v-card
-        color="#040b14"
+        color="drawercolor"
         class="navigation_bar_fixed"
         height="100vh"
     >
@@ -9,7 +9,7 @@
           :temporary="false"
           rail
           expand-on-hover
-          color="#040b14"
+          color="drawercolor"
           @update:rail="changeRail($event)"
       >
         <v-row justify="center" class="ma-0 my-5">

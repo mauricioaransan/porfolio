@@ -29,7 +29,7 @@
     </v-col>
   </v-card>
 
-  <v-sheet id="about" class="mt-10 pl-5 pr-5" color="transparent">
+  <v-sheet id="about" class="mt-10 px-5 py-5" color="bgcards">
     <!-- <v-select
     class="mb-3 ml-4"
     v-model="locale"
@@ -64,7 +64,7 @@
           <h3 class="port_subtitle">{{ $t('titles.personalInfo') }}</h3>
           <v-row>
             <v-col cols="12" xs="6" sm="6" md="6" lg="6" xl="6" >
-              <v-sheet elevation="5" class="pa-5 personal_info_card" height="100%">
+              <v-sheet elevation="5" class="pa-5 personal_info_card" height="100%" color="cards">
                 <div> <span class="personal_info_header"> {{ $t('labels.name') }}: </span> <span class="personal_info_info"> Mauricio Arancibia</span> </div>
                 <div> <span class="personal_info_header"> {{ $t('labels.age') }}: </span> <span class="personal_info_info"> 26 {{ $t('labels.years') }}</span> </div>
                 <div> <span class="personal_info_header"> {{ $t('labels.email') }}: </span> <span class="personal_info_info"> mauricioaransan@gmail.com</span> </div>
@@ -72,7 +72,7 @@
               </v-sheet>
             </v-col>
             <v-col cols="12" xs="6" sm="6" md="6" lg="6" xl="6" >
-              <v-sheet elevation="5" class="pa-5 personal_info_card">
+              <v-sheet elevation="5" class="pa-5 personal_info_card" color="cards">
                 <div> <span class="personal_info_header"> {{ $t('labels.skill') }}: </span> <span class="capitalize"> FrontEnd</span> </div>
                 <div> <span class="personal_info_header"> {{ $t('labels.expe') }}: </span> <span class="personal_info_info"> 2 {{ $t('labels.year') }}</span> </div>
                 <div> <span class="personal_info_header"> {{ $t('labels.language') }}: </span> <span class="capitalize"> {{ $t('labels.spanish') }}</span> </div>
@@ -94,7 +94,7 @@
       v-model="tab"
       bg-color="transparent"
       :center-active="true"
-      color="purple"
+      color="colortitle"
       density="comfortable"
       direction="horizontal"
       align-tabs="center"
@@ -253,19 +253,36 @@ export default defineComponent({
   padding-left: 100px !important;
 }
 
+.card-portfolio{
+  border-radius: 20px;
+}
+
 .port_title{
   text-transform: uppercase;
-  color:  #003785;
+  color:  rgb(var(--v-theme-colortitle));
   transition: 0.2s;
+  width: max-content;
 }
 .port_title:hover{
-  text-shadow: 0 0 3px #040b14;
+  text-shadow: 0 0 5px rgb(var(--v-theme-colortitlehover));
   transition: 0.2s;
   cursor:pointer;
 }
+.port_info_title{
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.port_info_content{
+  font-size: 17px;
+  text-align: justify;
+  hyphens: auto;
+  margin-bottom: 30px;
+}
 .port_subtitle{
   text-transform: uppercase;
-  color: red;
+  color: rgb(var(--v-theme-colorsubtitle));
   margin-bottom: 5px;
 }
 
@@ -341,4 +358,18 @@ export default defineComponent({
   text-transform: capitalize;
 }
 
+.contact_title{
+  line-height: 30px;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.contact_content{
+  font-size: 19px;
+  line-height: 30px;
+  margin-bottom: 45px;
+
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <v-timeline :dense="smAndDown">
+  <v-timeline :dense="smAndDown" >
 
     <v-timeline-item
         v-for="(item,id) in items"
@@ -7,8 +7,9 @@
         :dot-color="item.color"
         fill-dot
         :icon="item.icon"
+        size="large"
     >
-      <v-card class="mx-4 time_line_card">
+      <v-card class="mx-4 time_line_card" color="cards">
         <v-col class="pa-4">
           <div class="card_timelapse">{{ item.timelapse }}</div>
           <div class="card_title">{{ item.title }}</div>
@@ -41,7 +42,7 @@ export default defineComponent({
 
     const items = ref([
       {
-        color:          '#003785',
+        color:          'coloriconselect',
         icon:           'mdi-star-box-outline',
         timelapse :     computed(()=>{ return `mar, 2022 - ${t('date.jan')}, 2023`}),
         title:          computed(()=> t('timeline.exp.title1')),
@@ -49,7 +50,7 @@ export default defineComponent({
         content:        computed(()=> t('timeline.exp.content1'))
       },
       {
-        color:          '#81c9fa',
+        color:          'coloricondefault',
         icon:           'mdi-briefcase-outline',
         timelapse :     computed(()=>{ return 'nov, 2022 - ' + t('date.jan') + ', 2023'}),
         title:          computed(()=> t('timeline.exp.title2')),
@@ -57,7 +58,7 @@ export default defineComponent({
         content:        computed(()=> t('timeline.exp.content2'))
       },
       {
-        color:          '#81c9fa',
+        color:          'coloricondefault',
         icon:           'mdi-briefcase-outline',
         timelapse :     'may, 2021 - mar, 2022',
         title:          computed(()=> t('timeline.exp.title3')),
@@ -67,7 +68,7 @@ export default defineComponent({
         })
       },
       {
-        color:          '#81c9fa',
+        color:          'coloricondefault',
         icon:           'mdi-briefcase-outline',
         timelapse :     'feb, 2018 - feb, 2020',
         title:          computed(()=> t('timeline.exp.title4')),
@@ -85,40 +86,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style scoped>
-.time_line_card{
-  border-radius: 20px!important;
-}
-
-.card_timelapse{
-  color: #149ddd;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 17px;
-}
-.card_title{
-  font-size: 22px;
-  text-transform: capitalize;
-  font-weight: 700;
-  color: black;
-  margin-bottom: 5px;
-}
-.card_place{
-  font-size: 16px;
-  font-style: italic;
-  text-transform: uppercase;
-  color: grey;
-  margin-bottom: 10px;
-}
-.card_content{
-  font-size: 16px;
-  color: gray;
-  line-height: 26px;
-  text-align: justify;
-  /**
-  this is to generate hyphens in the words
-   */
-  hyphens: auto;
-}
-</style>
